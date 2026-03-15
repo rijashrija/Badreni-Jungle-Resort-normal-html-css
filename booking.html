@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | Badreni Jungle Resort</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="fixed-nav-padding">
+  <!-- Navbar (sticky) -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand" href="index.html">
+        <img src="./images/logo.jpeg" alt="Logo">
+      </a>
+
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="about.html">The Resort</a></li>
+          <li class="nav-item"><a class="nav-link" href="room.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+            <a class="btn book-btn active" href="booking.html" style="background-color: #6f7a4e; color: white;">BOOK
+              NOW</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Sidebar Toggler (Always Visible) -->
+      <button class="ms-3 border-0 bg-transparent custom-toggler" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="contact-main-hero">
+    <div class="overlay"></div>
+    <!-- Floating Offers -->
+    <div class="offers-container button-wrapper">
+      <a href="offers.html" class="offers-btn">Offers</a>
+      <div class="offers-icon"><i class="bi bi-tag"></i></div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send/?phone=%2B9779712600700&text&type=phone_number&app_absent=0" target="_blank"
+      class="whatsapp-btn"><i class="bi bi-whatsapp"></i></a>
+  </section>
+
+  <!-- Welcome Title -->
+  <div class="contact-container">
+    <div class="contact_title section_title">
+      <h3>Welcome to Badreni Jungle Resort</h3>
+    </div>
+  </div>
+
+  <!-- Booking Form Section -->
+  <section class="booking-section py-5" style="background-color: #f9f9f9;">
+    <div class="container">
+      <div class="booking-form-wrapper mx-auto shadow-sm p-4 p-md-5 bg-white"
+        style="max-width: 900px; border-radius: 8px;">
+        <div class="contact-form w-100">
+          <h2 class="text-center mb-5" style="font-family: 'Gendisa Demo', serif; color: #6f7a4e;">Plan Your Perfect
+            Stay</h2>
+          <form action="#">
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Full Name</label>
+                <input type="text" class="form-control" name="name" placeholder="John Doe" required
+                  style="border-radius: 0; padding: 12px;">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Email Address</label>
+                <input type="email" class="form-control" name="email" placeholder="john@example.com" required
+                  style="border-radius: 0; padding: 12px;">
+              </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-12 col-md-3">
+                <label class="form-label fw-semibold">Country Code</label>
+                <select class="form-select" name="country_code" required style="border-radius: 0; padding: 12px;">
+                  <option selected disabled value="">Select Code</option>
+                  <option value="+977">ðŸ‡³ðŸ‡µ Nepal (+977)</option>
+                  <option value="+91">ðŸ‡®ðŸ‡³ India (+91)</option>
+                  <option value="+1">ðŸ‡ºðŸ‡¸ USA (+1)</option>
+                  <option value="+44">ðŸ‡¬ðŸ‡§ UK (+44)</option>
+                  <option value="+86">ðŸ‡¨ðŸ‡³ China (+86)</option>
+                  <option value="+81">ðŸ‡¯ðŸ‡µ Japan (+81)</option>
+                  <option value="+49">ðŸ‡©ðŸ‡ª Germany (+49)</option>
+                  <option value="+33">ðŸ‡«ðŸ‡· France (+33)</option>
+                  <option value="+61">ðŸ‡¦ðŸ‡º Australia (+61)</option>
+                  <option value="+971">ðŸ‡¦ðŸ‡ª UAE (+971)</option>
+                  <option value="+65">ðŸ‡¸ðŸ‡¬ Singapore (+65)</option>
+                  <option value="+other">Other</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-4">
+                <label class="form-label fw-semibold">Phone Number</label>
+                <input type="tel" class="form-control" name="phone" placeholder="1234567890" required
+                  style="border-radius: 0; padding: 12px;">
+              </div>
+              <div class="col-12 col-md-5">
+                <label class="form-label fw-semibold">Estimated Arrival Time</label>
+                <input type="time" class="form-control" name="arrival_time" required
+                  style="border-radius: 0; padding: 12px;">
+              </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Check-in Date</label>
+                <input type="date" class="form-control" name="check_in" required
+                  style="border-radius: 0; padding: 12px;">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Check-out Date</label>
+                <input type="date" class="form-control" name="check_out" required
+                  style="border-radius: 0; padding: 12px;">
+              </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Adults</label>
+                <select class="form-select" name="adults" required style="border-radius: 0; padding: 12px;">
+                  <option selected disabled value="">Select Number</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4+</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Children</label>
+                <select class="form-select" name="children" style="border-radius: 0; padding: 12px;">
+                  <option selected disabled value="">Select Number</option>
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Room Type</label>
+                <select class="form-select" name="room_type" required style="border-radius: 0; padding: 12px;">
+                  <option selected disabled value="">Select Room Type</option>
+                  <option>Deluxe Room</option>
+                  <option>Super Deluxe Room</option>
+                  <option>Family Suite</option>
+                  <option>Jungle Villa</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Number of Rooms</label>
+                <select class="form-select" name="num_rooms" required style="border-radius: 0; padding: 12px;">
+                  <option selected disabled value="">Select Rooms</option>
+                  <option value="1">1 Room</option>
+                  <option value="2">2 Rooms</option>
+                  <option value="3">3 Rooms</option>
+                  <option value="4">4 Rooms</option>
+                  <option value="5">5 Rooms</option>
+                  <option value="5+">5+ Rooms</option>
+                </select>
+              </div>
+            </div>
+
+
+
+            <div class="mb-5">
+              <label class="form-label fw-semibold">Special Requests</label>
+              <textarea class="form-control" name="requests" rows="4"
+                placeholder="Any specific requirements (e.g., extra bed, dietary needs)..."
+                style="border-radius: 0; padding: 12px; resize: none;"></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="send-btn"
+                style="background-color: #6f7a4e; color: white; border: none; padding: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Confirm
+                Booking Request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div class="footer-leaf-left">
+      <img src="./images/white_leaf.png" alt="">
+    </div>
+    <div class="footer-leaf-right">
+      <img src="./images/white_leaf.png" alt="">
+    </div>
+
+    <div class="footer-container">
+      <!-- LEFT SECTION -->
+      <div class="footer-col logo-col grid-item">
+        <img src="./images/footer_logo.png" class="logo">
+        <div class="text_below_logo">
+          <p class="info">Badreni Road Sauraha, Chitwan, Nepal</p>
+          <p class="info">+977 56 593364 , +977-9866247923</p>
+          <p class="info">badrenijungleresort@gmail.com</p>
+          <div class="social">
+            <span><img src="./images/fb.png" alt=""></span>
+            <span><img src="./images/insta_footer.png" alt=""></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-col grid-item">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="room.html" style="color: inherit; text-decoration: none;">Accommodations</a></li>
+          <li><a href="experience.html" style="color: inherit; text-decoration: none;">Experiences</a></li>
+          <li><a href="dining.html" style="color: inherit; text-decoration: none;">Conference & Dining</a></li>
+          <li><a href="contact.html" style="color: inherit; text-decoration: none;">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- EXPERIENCES -->
+      <div class="footer-col grid-item">
+        <h3>Experiences</h3>
+        <ul>
+          <li>Jungle Safari</li>
+          <li>Nature Walk</li>
+          <li>Sundown Experience</li>
+          <li>Cultural Performance</li>
+          <li>Canoeing Adventure</li>
+        </ul>
+      </div>
+
+      <!-- RESERVATION -->
+      <div class="footer-col grid-item">
+        <h3>Reservation Office</h3>
+        <p> Narayan Gopal Road, Lazimpat, Kathmandu</p>
+        <p> +977 14400227 , +977-9866247923</p>
+        <p>sales@badrenijungleresort.com</p>
+      </div>
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+      Copyright Â© 2026 Badreni Jungle Resort. All Rights Reserved.
+      Photo and Website by <span>Longtail e-media</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMenuLabel">
+        <img src="./images/logo.jpeg" alt="Logo" style="width: 120px;">
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!-- Sample Menus Section -->
+      <div class="menu-section">
+        <h4>Breakfast Selection</h4>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <h5>Traditional Nepali Breakfast</h5>
+            <p>Sel Roti, Chickpea Curry, and Masala Tea</p>
+          </div>
+          <div class="menu-item-price">$12</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <h5>Continental Harvest</h5>
+            <p>Fresh Croissants, Seasonal Fruits, and Coffee</p>
+          </div>
+          <div class="menu-item-price">$15</div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h4>Lunch Specialties</h4>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <h5>Thakali Khana Set</h5>
+            <p>Authentic Buckwheat Porridge with Local Mutton</p>
+          </div>
+          <div class="menu-item-price">$18</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <h5>Riverview Garden Salad</h5>
+            <p>Organic Greens with Roasted Seeds</p>
+          </div>
+          <div class="menu-item-price">$14</div>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h4>Dinner Delights</h4>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <h5>Royal Chitwan BBQ</h5>
+            <p>Grilled Marinated Meats with Spiced Chutney</p>
+          </div>
+          <div class="menu-item-price">$25</div>
+        </div>
+      </div>
+
+      <div class="offcanvas-extra-content">
+        <h4 class="section_title">Resort Info</h4>
+        <div class="contact-info mt-4">
+          <p><i class="bi bi-geo-alt me-2"></i> Badreni Road, Sauraha, Chitwan</p>
+          <p><i class="bi bi-telephone me-2"></i> +977 56 593364</p>
+        </div>
+        <div class="social-links mt-4">
+          <a href="#" class="me-3 text-dark"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="me-3 text-dark"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
