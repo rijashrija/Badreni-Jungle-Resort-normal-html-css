@@ -1,4 +1,4 @@
-const images = document.querySelectorAll(".gallery-item img");
+const images = document.querySelectorAll(".gallery-item img, .offer-item img");
 
 const popup = document.getElementById("popup");
 const popupImg = document.getElementById("popup-img");

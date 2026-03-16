@@ -2506,6 +2506,44 @@ a:hover {
 /* Itinerary Section */
 .itinerary-section {
   padding: 60px 0;
+  position: relative;
+  overflow: hidden; /* Keep leaves contained */
+}
+
+/* Decorative Leaves for Itinerary */
+.itinerary-leaf-top {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 250px;
+  z-index: 0;
+  opacity: 0.15;
+  transform: rotate(45deg);
+}
+
+.itinerary-leaf-top img {
+  width: 100%;
+  height: auto;
+}
+
+.itinerary-leaf-bottom {
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 300px;
+  z-index: 0;
+  opacity: 0.15;
+  transform: rotate(-45deg);
+}
+
+.itinerary-leaf-bottom img {
+  width: 100%;
+  height: auto;
+}
+
+.itinerary-section .container {
+  position: relative;
+  z-index: 1; /* Ensure text sits above leaves */
 }
 
 .itinerary-day {
@@ -2576,7 +2614,7 @@ a:hover {
   font-weight: 500;
   padding: 12px 40px;
   border-radius: 0 !important;
-  width: 100%;
+    width: 30%;
   margin-top: 10px;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -2973,22 +3011,33 @@ a:hover {
 }
 
 .room-amenities .amenities-card, .about-amenities .amenities-card {
-  background-color: #6f7a4e;
-  padding: 4rem 3rem;
+  background-color: white;
+  border: 2px solid #6f7a4e;
+     padding: 3rem 1rem;
+}
+
+.room-amenities .col-md-4, .about-amenities .col-md-4 {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.amenity-list-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
 }
 
 .room-amenities .amenity-item, .about-amenities .amenity-item {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  text-align: left !important;
   margin-bottom: 25px !important;
-  color: #ffffff !important;
+  color: #6f7a4e !important;
   transition: all 0.3s ease;
 }
 
 .room-amenities .amenity-item i, .about-amenities .amenity-item i {
-  color: #ffffff !important;
+  color: #6f7a4e !important;
   width: 45px !important;
   font-size: 1.8rem !important;
   text-align: left;
@@ -3036,12 +3085,13 @@ a:hover {
 
 .room-highlight-section .highlight-title {
   color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
+  font-family: 'Gendisa Demo', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   position: relative;
+  letter-spacing: 0.5px;
 }
 
 .room-highlight-section .highlight-title::after {
@@ -3051,7 +3101,7 @@ a:hover {
   bottom: -10px;
   width: 40px;
   height: 1px;
-  background-color: white;
+  background-color: rgba(255,255,255,0.6);
 }
 
 .room-highlight-section .highlight-text {
@@ -3081,6 +3131,91 @@ a:hover {
 .room-highlight-section .btn-highlight-book:hover {
   background-color: #6f7a4e;
   color: #fff;
+  text-decoration: none;
+}
+
+/* Policy Block */
+.policy-block {
+  border-top: 1px solid rgba(255,255,255,0.18);
+  padding-top: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.policy-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 1rem;
+}
+
+.policy-icon {
+  font-size: 1.5rem;
+  color: rgba(255,255,255,0.75);
+  flex-shrink: 0;
+  width: 28px;
+}
+
+.policy-label {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1;
+}
+
+.policy-value {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 3px;
+  letter-spacing: 0.2px;
+}
+
+.policy-section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.policy-section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255,255,255,0.18);
+}
+
+.policy-child-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 0.8rem;
+}
+
+.child-age-label {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  min-width: 80px;
+  letter-spacing: 0.5px;
+}
+
+.child-policy-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.2px;
 }
 
 @media (max-width: 991.98px) {
@@ -3367,45 +3502,58 @@ a:hover {
 
 
 /* Offers Gallery Grid */
+/* Dedicated Offers Section */
+.offers-section {
+  padding: 80px 0;
+  background-color: #fdfdfb;
+}
+
+.offers-section .container {
+  max-width: 1300px !important; /* Balanced inline margin */
+  margin: 0 auto;
+}
+
 .offers-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 320px));
+  justify-content: center;
+  gap: 60px;
   width: 100%;
-  padding: 0;
 }
 
 .offer-item {
   overflow: hidden;
-  background: #000;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Subtle depth */
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .offer-item img {
   width: 100%;
-     height: 100%;
-  object-fit: cover;
+  height: auto !important; /* Show full image, no cutting */
   display: block;
-  transition: transform 0.4s ease;
+  object-fit: contain;
 }
 
-.offer-item img:hover {
-  transform: scale(1.05);
+.offer-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
-/* Responsive: 2 per row on tablets */
 @media (max-width: 992px) {
-  .offers-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .offer-item {
+    width: calc(50% - 18px); /* 2 in a row */
   }
 }
 
-/* Responsive: 1 per row on mobile */
 @media (max-width: 576px) {
-  .offers-grid {
-    grid-template-columns: 1fr;
+  .offer-item {
+    width: 100%; /* 1 per row */
   }
-  .offer-item img {
-    height: 250px;
+  .offers-section {
+    padding: 50px 0;
   }
 }
 
