@@ -34,7 +34,7 @@
                     <li class="nav-item"><a class="nav-link" href="experience.html">Experiences</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+                    <li class="nav-item ms-lg-4 mt-3 mt-lg-0 button-wrapper">
                         <a class="btn book-btn" href="booking.html">BOOK NOW</a>
                     </li>
                 </ul>
@@ -284,6 +284,34 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- INQUIRY POPUP -->
+  <div id="inquiry-popup" class="inquiry-modal">
+      <div class="inquiry-overlay"></div>
+      <div class="inquiry-content">
+          <button class="inquiry-close"><i class="bi bi-x-lg"></i></button>
+          <div class="inquiry-form-container">
+              <h2 class="inquiry-title">Enquiry This Offer</h2>
+              <form id="offer-inquiry-form">
+                  <div class="inquiry-input-group">
+                      <input type="text" placeholder="Your Name" required>
+                  </div>
+                  <div class="inquiry-input-group">
+                      <input type="email" placeholder="Email Address" required>
+                  </div>
+                  <div class="inquiry-input-group">
+                      <input type="tel" placeholder="Phone Number" required>
+                  </div>
+                  <div class="inquiry-input-group">
+                      <textarea placeholder="Your Message or Special Requirements" rows="5"></textarea>
+                  </div>
+                  <div class="inquiry-submit-wrapper">
+                      <button type="submit" class="btn-send-inquiry">SEND INQUIRY</button>
+                  </div>
+              </form>
+          </div>
+      </div>
   </div>
 
   <!-- Scripts -->
