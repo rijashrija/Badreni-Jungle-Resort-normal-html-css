@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   width: 100%;
 }
@@ -655,7 +656,7 @@ a:hover {
 }
 
 .blogs .section_title {
-     font-size: clamp(22px, 5vw, 31px);
+  font-size: clamp(22px, 5vw, 31px);
 
   position: relative;
   z-index: 1;
@@ -877,7 +878,7 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.8);
   padding: 60px 50px;
   text-align: center;
-      width: 95%;
+  width: 95%;
 }
 
 .quote {
@@ -1411,8 +1412,19 @@ a:hover {
 }
 
 .contact-info {
-  background: #f4f4f4;
+  background: #f4f5f0;
   padding: 80px 10% 40px 10%;
+}
+.contact-info p{
+  margin-bottom: 40px;
+}
+.getting-here-title {
+  text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+  letter-spacing: 1px;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-info a {
@@ -1441,11 +1453,13 @@ a:hover {
 .contact-item {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align icon and text to the left */
+  justify-content: flex-start;
+  /* Align icon and text to the left */
   gap: 20px;
   margin-bottom: 18px;
   width: 100%;
-  max-width: 320px; /* Constrain width so the block stays centered in the column */
+  max-width: 320px;
+  /* Constrain width so the block stays centered in the column */
   margin-inline: auto;
   text-align: left;
 }
@@ -1475,7 +1489,7 @@ a:hover {
     gap: 40px;
     width: 100%;
   }
-  
+
   .contact-info {
     padding: 60px 5%;
   }
@@ -1488,7 +1502,7 @@ a:hover {
 /* CONTACT FORM + MAP SECTION */
 
 .contact-form-map {
-  padding: 40px 10%;
+  padding: 40px 14% 40px 11%;
   background: #f6f6f6;
 }
 
@@ -1586,7 +1600,7 @@ a:hover {
   .form-map-wrapper {
     flex-direction: column;
   }
-  
+
   .contact-form,
   .contact-map {
     width: 100%;
@@ -1603,7 +1617,7 @@ a:hover {
     flex-direction: column;
     gap: 0;
   }
-  
+
   .captcha-box {
     width: 100%;
   }
@@ -1651,18 +1665,20 @@ a:hover {
 
 /* text */
 .desc-text {
-    max-width: 496px;
-    text-align: justify;
+  max-width: 496px;
+  text-align: justify;
   font-size: 14px;
   line-height: 1.7;
   color: #555;
 }
-.desc-text h6{
+
+.desc-text h6 {
   font-size: 30px;
 }
+
 .desc {
   margin-top: 40px;
-    padding: 20px 120px 14px 120px;
+  padding: 20px 120px 14px 120px;
 }
 
 /* Center heading block */
@@ -1812,13 +1828,15 @@ a:hover {
 .exp-slider-section {
   padding: 40px 40px 60px;
 }
-.exp-slider-section h6{
+
+.exp-slider-section h6 {
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
   color: #6f7a4e;
 
 }
+
 .exp-slider-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -2112,7 +2130,7 @@ a:hover {
 .room-title {
   font-family: 'Poppins', serif;
   font-size: 1.2rem;
-    font-weight: 300;
+  font-weight: 300;
   margin-bottom: 1.5rem !important;
 }
 
@@ -2122,8 +2140,8 @@ a:hover {
 }
 
 .room-price {
-     font-size: 1rem;
-    font-weight: 300;
+  font-size: 1rem;
+  font-weight: 300;
 
   color: #333;
   margin-bottom: 2rem !important;
@@ -2135,15 +2153,15 @@ a:hover {
 }
 
 .room-desc {
-     font-size: 0.9rem;
-    color: #555;
-    line-height: 1.5;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
   margin-bottom: 2.5rem !important;
 }
 
 .room-features li {
   margin-bottom: 0.8rem;
-     font-size: 0.85rem;
+  font-size: 0.85rem;
   color: #444;
 }
 
@@ -2156,7 +2174,7 @@ a:hover {
 .view-details-link {
   color: #333;
   text-decoration: underline;
-    font-weight: 300;
+  font-weight: 300;
   letter-spacing: 1px;
   font-size: 0.9rem;
 }
@@ -2515,7 +2533,8 @@ a:hover {
 .itinerary-section {
   padding: 60px 0;
   position: relative;
-  overflow: hidden; /* Keep leaves contained */
+  overflow: hidden;
+  /* Keep leaves contained */
 }
 
 /* Decorative Leaves for Itinerary */
@@ -2551,7 +2570,8 @@ a:hover {
 
 .itinerary-section .container {
   position: relative;
-  z-index: 1; /* Ensure text sits above leaves */
+  z-index: 1;
+  /* Ensure text sits above leaves */
 }
 
 .itinerary-day {
@@ -2622,7 +2642,7 @@ a:hover {
   font-weight: 500;
   padding: 12px 40px;
   border-radius: 0 !important;
-    width: 30%;
+  width: 30%;
   margin-top: 10px;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -2999,13 +3019,15 @@ a:hover {
 }
 
 /* Amenities Section Styles */
-.room-amenities, .about-amenities {
+.room-amenities,
+.about-amenities {
   padding-top: 1rem;
   padding-bottom: 3rem;
   padding-inline: 0;
 }
 
-.room-amenities .amenities-header, .about-amenities .amenities-header {
+.room-amenities .amenities-header,
+.about-amenities .amenities-header {
   font-family: 'Gendisa Demo', serif !important;
   font-size: 2.2rem;
   /* Increased size to match other Gendisa headers */
@@ -3018,13 +3040,15 @@ a:hover {
   /* Center horizontally */
 }
 
-.room-amenities .amenities-card, .about-amenities .amenities-card {
+.room-amenities .amenities-card,
+.about-amenities .amenities-card {
   background-color: white;
   border: 2px solid #6f7a4e;
-     padding: 3rem 1rem;
+  padding: 3rem 1rem;
 }
 
-.room-amenities .col-md-4, .about-amenities .col-md-4 {
+.room-amenities .col-md-4,
+.about-amenities .col-md-4 {
   display: flex !important;
   justify-content: center !important;
 }
@@ -3035,7 +3059,8 @@ a:hover {
   align-items: flex-start !important;
 }
 
-.room-amenities .amenity-item, .about-amenities .amenity-item {
+.room-amenities .amenity-item,
+.about-amenities .amenity-item {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
@@ -3044,7 +3069,8 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.room-amenities .amenity-item i, .about-amenities .amenity-item i {
+.room-amenities .amenity-item i,
+.about-amenities .amenity-item i {
   color: #6f7a4e !important;
   width: 45px !important;
   font-size: 1.8rem !important;
@@ -3052,14 +3078,16 @@ a:hover {
   opacity: 0.9;
 }
 
-.room-amenities .amenity-item span, .about-amenities .amenity-item span {
+.room-amenities .amenity-item span,
+.about-amenities .amenity-item span {
   font-family: serif;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.4;
 }
 
-.room-amenities .amenity-item:hover, .about-amenities .amenity-item:hover {
+.room-amenities .amenity-item:hover,
+.about-amenities .amenity-item:hover {
   transform: translateX(5px);
 }
 
@@ -3109,7 +3137,7 @@ a:hover {
   bottom: -10px;
   width: 40px;
   height: 1px;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .room-highlight-section .highlight-text {
@@ -3144,7 +3172,7 @@ a:hover {
 
 /* Policy Block */
 .policy-block {
-  border-top: 1px solid rgba(255,255,255,0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
   padding-top: 1.1rem;
   margin-bottom: 0.5rem;
 }
@@ -3158,7 +3186,7 @@ a:hover {
 
 .policy-icon {
   font-size: 1.5rem;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   flex-shrink: 0;
   width: 28px;
   display: inline-flex;
@@ -3172,7 +3200,7 @@ a:hover {
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
   line-height: 1;
 }
 
@@ -3191,7 +3219,7 @@ a:hover {
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
   margin-bottom: 0.75rem;
   display: flex;
   align-items: center;
@@ -3202,7 +3230,7 @@ a:hover {
   content: '';
   flex: 1;
   height: 1px;
-  background: rgba(255,255,255,0.18);
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .policy-child-row {
@@ -3407,6 +3435,7 @@ a:hover {
 .offcanvas-backdrop {
   z-index: 1999 !important;
 }
+
 /* About Carousel Styles */
 .about-carousel .item img {
   height: 300px;
@@ -3473,6 +3502,7 @@ a:hover {
   background-color: #6f7a4e !important;
   transform: scale(1.2);
 }
+
 /* Room Page Carousel Navigation Improvements */
 .carousel {
   overflow: visible !important;
@@ -3482,8 +3512,8 @@ a:hover {
 .carousel-control-next {
   width: 45px !important;
   height: 45px !important;
-  background-color: rgba(111, 122, 78, 0.9) !important; 
-  border-radius: 0 !important; 
+  background-color: rgba(111, 122, 78, 0.9) !important;
+  border-radius: 0 !important;
   top: 50% !important;
   transform: translateY(-50%);
   margin: 0 !important;
@@ -3502,7 +3532,8 @@ a:hover {
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  background-color: #5c6b4f !important; /* Slightly darker green */
+  background-color: #5c6b4f !important;
+  /* Slightly darker green */
 }
 
 .carousel-control-prev i,
@@ -3520,7 +3551,8 @@ a:hover {
 }
 
 .offers-section .container {
-  max-width: 1300px !important; /* Balanced inline margin */
+  max-width: 1300px !important;
+  /* Balanced inline margin */
   margin: 0 auto;
 }
 
@@ -3535,7 +3567,8 @@ a:hover {
 .offer-item {
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Subtle depth */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  /* Subtle depth */
   border: 1px solid #f0f0f0;
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -3543,26 +3576,30 @@ a:hover {
 
 .offer-item img {
   width: 100%;
-  height: auto !important; /* Show full image, no cutting */
+  height: auto !important;
+  /* Show full image, no cutting */
   display: block;
   object-fit: contain;
 }
 
 .offer-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 992px) {
   .offer-item {
-    width: calc(50% - 18px); /* 2 in a row */
+    width: calc(50% - 18px);
+    /* 2 in a row */
   }
 }
 
 @media (max-width: 576px) {
   .offer-item {
-    width: 100%; /* 1 per row */
+    width: 100%;
+    /* 1 per row */
   }
+
   .offers-section {
     padding: 50px 0;
   }
@@ -3587,8 +3624,13 @@ a:hover {
   background: rgba(111, 122, 78, 1) !important;
 }
 
-.other-packages-carousel .owl-nav .owl-prev { left: -22.5px; }
-.other-packages-carousel .owl-nav .owl-next { right: -22.5px; }
+.other-packages-carousel .owl-nav .owl-prev {
+  left: -22.5px;
+}
+
+.other-packages-carousel .owl-nav .owl-next {
+  right: -22.5px;
+}
 
 /* Inquiry Modal Styles for Offers */
 .inquiry-modal {
@@ -3687,6 +3729,7 @@ a:hover {
   .inquiry-content {
     padding: 20px;
   }
+
   .inquiry-title {
     margin-bottom: 25px;
   }
@@ -3696,11 +3739,13 @@ a:hover {
 .numeric-stepper {
   display: flex;
   align-items: center;
-  border: 1px solid #dee2e6; /* Match Bootstrap default */
+  border: 1px solid #dee2e6;
+  /* Match Bootstrap default */
   width: 100%;
   background: #fff;
   transition: border-color 0.3s ease;
-  height: 48px; /* Match form-control height */
+  height: 48px;
+  /* Match form-control height */
 }
 
 .numeric-stepper:focus-within {
@@ -3753,6 +3798,3 @@ a:hover {
 .stepper-input {
   display: none;
 }
-
-
-
