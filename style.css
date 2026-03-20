@@ -220,6 +220,17 @@ a:hover {
   padding: 6px 18px;
   border-radius: 3px;
   text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, visibility 0.4s;
+  visibility: hidden;
+}
+
+.offers-container:hover .offers-btn,
+.offers-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 }
 
 .offers-btn:hover {
@@ -236,6 +247,12 @@ a:hover {
   justify-content: center;
   align-items: center;
   color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.offers-icon:hover {
+  background: #5c6b4f;
 }
 
 /* WhatsApp Button */
@@ -1504,13 +1521,15 @@ a:hover {
 /* CONTACT FORM + MAP SECTION */
 
 .contact-form-map {
-  padding: 40px 14% 40px 11%;
+  padding: 60px 4%;
   background: #f6f6f6;
 }
 
 .form-map-wrapper {
   display: flex;
   gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* FORM */
@@ -3800,3 +3819,33 @@ a:hover {
 .stepper-input {
   display: none;
 }
+
+/* Offcanvas Navigation */
+.offcanvas-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.offcanvas-nav li {
+  margin-bottom: 20px;
+}
+
+.offcanvas-nav a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+  display: block;
+}
+
+.offcanvas-nav a:hover {
+  color: #6f7a4e;
+}
+
+.offcanvas-book-btn {
+  color: #fff !important;
+  text-align: center;
+  width: 100%;
+}

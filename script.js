@@ -140,4 +140,30 @@ document.addEventListener("DOMContentLoaded", () => {
             console.warn("Stepper missing elements:", { minusBtn, plusBtn, input });
         }
     });
+
+    // Floating Offer Button Logic
+    const offerContainer = document.querySelector('.offers-container');
+    const offerIcon = document.querySelector('.offers-icon');
+    const offerBtn = document.querySelector('.offers-btn');
+    let offerTimeout;
+
+    if (offerIcon && offerBtn) {
+        const showBtn = () => {
+            clearTimeout(offerTimeout);
+            offerBtn.classList.add('show');
+        };
+
+        const hideBtnWithDelay = () => {
+            clearTimeout(offerTimeout);
+            offerTimeout = setTimeout(() => {
+                offerBtn.classList.remove('show');
+            }, 0);
+        };
+
+        offerIcon.addEventListener('mouseenter', showBtn);
+        offerIcon.addEventListener('mouseleave', hideBtnWithDelay);
+
+        offerBtn.addEventListener('mouseenter', showBtn);
+        offerBtn.addEventListener('mouseleave', hideBtnWithDelay);
+    }
 });
